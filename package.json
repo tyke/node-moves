@@ -1,6 +1,6 @@
 {
   "name": "moves",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "api wrapper for moves app",
   "author": "tyke lewis <tykelewis@gmail.com>",
   "dependencies": {
