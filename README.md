@@ -10,8 +10,8 @@ npm install moves
 
 Oauth
 =====
+initialize with client information as created at (https://dev.moves-app.com/clients)
 <pre>
-  //initialize with client information as created at (https://dev.moves-app.com/clients)
   var Moves = require('moves')
     , moves = new Moves({
           client_id: 'your client id'
@@ -22,16 +22,17 @@ Oauth
 
 Start Auth Flow
 ---------------
+**Either**
 <pre>
   var authorize_url = moves.authorize({
       scope: ['activity', 'location'] //can contain either activity, location or both
     , state: 'my_state' //optional state as per oauth
   })
+</pre>
   
-  /* --OR-- */
-  
-  //optionally pass in an [Express Response Object](http://expressjs.com/api.html#response)
-  //and it will automatically redirect the user
+**Or**<br />
+Optionally pass in an [Express Response Object](http://expressjs.com/api.html#response) and it will automatically redirect the user
+<pre>
   moves.authorize({
       scope: ['activity', 'location'] //can contain either activity, location or both
     , state: 'my_state' //optional state as per oauth
