@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/tyke/node-moves.png)](http://travis-ci.org/tyke/node-moves)
+
 Moves API for Node
 ==========
 This provides a wrapper to the [Moves API](https://dev.moves-app.com/docs/api). Please refer to the documentation before getting started. You'll need a [client](https://dev.moves-app.com/clients) before you can begin.
