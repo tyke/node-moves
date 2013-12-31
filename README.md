@@ -70,10 +70,10 @@ Using the API
 =============
 Now that we have a valid access token, we can hit any endpoints that our token is correctly scoped to
 <pre>
-  moves.get('/user/profile', function(error, response, body) {
+  moves.get('/user/profile', access_token, function(error, response, body) {
   
   })
-  moves.get('/user/summary/daily?from=<from>&to=<to>', function(error, response, body) {
+  moves.get('/user/summary/daily?from=<from>&to=<to>', access_token, function(error, response, body) {
   
   })
 </pre>
