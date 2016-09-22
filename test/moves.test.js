@@ -18,7 +18,7 @@ describe('initialization', function() {
     })
     it('should have default values', function() {
         var moves = Moves({ client_id: '123' })
-        moves.config.should.have.property('api_base', 'https://api.moves-app.com/api/v1')
+        moves.config.should.have.property('api_base', 'https://api.moves-app.com/api/1.1')
         moves.config.should.have.property('oauth_base', 'https://api.moves-app.com/oauth/v1')
         moves.config.should.have.property('authorize_url', '/authorize')
     })
