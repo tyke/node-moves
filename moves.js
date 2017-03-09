@@ -7,7 +7,7 @@ var Moves = module.exports = function(config_obj) {
 
     var config = {
         oauth_base: 'https://api.moves-app.com/oauth/v1'
-      , api_base: 'https://api.moves-app.com/api/v1'
+      , api_base: 'https://api.moves-app.com/api/1.1'
       , authorize_url: '/authorize'
     }
 
